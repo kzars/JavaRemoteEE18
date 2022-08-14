@@ -1,3 +1,5 @@
+package basics;
+
 public class Methods {
     public static void main(String[] args) {
         printName("Karlis");

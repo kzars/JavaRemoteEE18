@@ -1,3 +1,5 @@
+package basics.tasks;
+
 import java.util.Arrays;
 
 public class MinMaxMethods {

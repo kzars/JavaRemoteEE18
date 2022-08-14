@@ -1,3 +1,5 @@
+package basics.tasks;
+
 import java.util.Scanner;
 
 public class Quiz {

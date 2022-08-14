@@ -1,3 +1,5 @@
+package basics.tasks;
+
 public class Kahoot2 {
     public static void main(String[] args) {
 

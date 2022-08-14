@@ -1,3 +1,5 @@
+package basics;
+
 public class RandomExample {
     public static void main(String[] args) {
 
