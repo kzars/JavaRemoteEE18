@@ -17,7 +17,7 @@ public class ExceptionExample {
             //int num1 = 5/0;
             int[] num = {1,2,3,4};
             System.out.println(num[4]);
-        }catch (ArithmeticException e){
+        }catch (ArithmeticException | OutOfMemoryError e){
             System.out.println("There was problem with some math operations");
             System.out.println("Exception: " + e);
         }catch (ArrayIndexOutOfBoundsException e){
