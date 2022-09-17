@@ -7,7 +7,7 @@ public class FileOutputStreamExample {
     public static void main(String[] args) throws IOException {
 
 
-        String test = "Output test";
+        String test = "This is new output";
 
         FileOutputStream out = new FileOutputStream("Data\\Output.txt");
 
