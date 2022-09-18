@@ -1,8 +1,8 @@
-package patterns;
+package patterns.singleton;
 
 public class EagerInitializedSingleton {
 
-    //Creating a field that represents an instance oh this class
+    //Creating a field that represents an instance of this class
     private static final EagerInitializedSingleton instance = new EagerInitializedSingleton();
 
     private String name;

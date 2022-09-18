@@ -1,4 +1,4 @@
-package patterns;
+package patterns.singleton;
 
 public class ClassicalClass {
     private String name;
