@@ -8,15 +8,30 @@ package advanced.tasks.grocery;
 // 5. searchItem
 
 import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 public class GroceryList {
 
     //Field
     private ArrayList<String> groceryList = new ArrayList<>();
 
+    //Constructor
+    public GroceryList(){
+        groceryList.add("Bananas");
+        groceryList.add("Apple");
+        groceryList.add("Water");
+        groceryList.add("Meat");
+        groceryList.add("Candy");
+    }
+
+
     //Methods
     public void addGroceryItem(String item){
-        groceryList.add(item);
+        if(checkIfValid(item)){
+            groceryList.add(item);
+        }else {
+            System.out.println("Item name is not valid");
+        }
     }
 
     public void printGroceryList(){
@@ -41,11 +56,15 @@ public class GroceryList {
     }
 
     public void modifyGroceryItem(int position, String newItem){
-        if(position >= 0 && position < groceryList.size()){
-            System.out.println("Grocery item " +  groceryList.get(position) + " was modified");
-            groceryList.set(position, newItem);
+        if(checkIfValid(newItem)){
+            if(position >= 0 && position < groceryList.size()){
+                System.out.println("Grocery item " +  groceryList.get(position) + " was modified");
+                groceryList.set(position, newItem);
+            }else {
+                System.out.println("Item number is not valid");
+            }
         }else {
-            System.out.println("Item number is not valid");
+            System.out.println("Item name is not valid");
         }
     }
 
@@ -55,6 +74,15 @@ public class GroceryList {
         }else {
             return false;
         }
+    }
+
+    public void deleteAllItems(){
+        groceryList.clear();
+        System.out.println("All items in the list are deleted");
+    }
+
+    private boolean checkIfValid(String input){
+        return Pattern.matches("[a-zA-Z ]+[0-9 ]*[a-zA-Z ]*", input);
     }
 
 

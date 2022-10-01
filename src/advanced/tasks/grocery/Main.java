@@ -1,5 +1,6 @@
 package advanced.tasks.grocery;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 //TODO:
@@ -21,41 +22,55 @@ public class Main {
 
         while (!quit){
             System.out.println("Enter your choice");
-            choice = scanner.nextInt();
-            //buf fix
-            scanner.nextLine();
-            switch (choice){
-                case 0:
-                    //print all options
-                    printInstructions();
-                    break;
-                case 1:
-                    //print grocery list
-                    groceryList.printGroceryList();
-                    break;
-                case 2:
-                    //add item
-                    addItem();
-                    break;
-                case 3:
-                    //modify item
-                    modifyItem();
-                    break;
-                case 4:
-                    //remove item
-                    removeItem();
-                    break;
-                case 5:
-                    //search item
-                    searchForItem();
-                    break;
-                case 6:
-                    //quit
-                    quit = true;
-                    break;
-                default:
-                    System.out.println("Input no valid");
+
+            try {
+                choice = scanner.nextInt();
+                //buf fix
+                scanner.nextLine();
+                switch (choice){
+                    case 0:
+                        //print all options
+                        printInstructions();
+                        break;
+                    case 1:
+                        //print grocery list
+                        groceryList.printGroceryList();
+                        break;
+                    case 2:
+                        //add item
+                        addItem();
+                        break;
+                    case 3:
+                        //modify item
+                        modifyItem();
+                        break;
+                    case 4:
+                        //remove item
+                        removeItem();
+                        break;
+                    case 5:
+                        //search item
+                        searchForItem();
+                        break;
+                    case 6:
+                        //Delete all items
+                        groceryList.deleteAllItems();
+                        break;
+                    case 7:
+                        //quit
+                        quit = true;
+                        break;
+                    default:
+                        System.out.println("Input no valid");
+                }
+            }catch (InputMismatchException e){
+                System.err.println("Wrong input! Integers only!");
+                //buf fix
+                scanner.nextLine();
             }
+
+
+
         }
 
     }
@@ -68,7 +83,8 @@ public class Main {
         System.out.println("\t 3 - To modify an item in the list");
         System.out.println("\t 4 - To remove an item from the list");
         System.out.println("\t 5 - To search for an item in the list");
-        System.out.println("\t 6 - To quit the application");
+        System.out.println("\t 6 - To delete all item in the list");
+        System.out.println("\t 7 - To quit the application");
     }
 
     public static void addItem(){
