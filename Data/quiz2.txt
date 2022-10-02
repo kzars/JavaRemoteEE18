@@ -1,0 +1,21 @@
+3
+Who is the author of the play Zelta Zirgs?
+Rainis
+Janis Baltvilks
+Anslavs Eglitis
+Who is the author of novel White Fang?
+Jack London
+William Shakespeare
+J. K. Rowling
+Who is the author of War and Peace?
+Leo Tolstov
+Alexander Pushkin
+Fyodor Dostoevsky
+Who is the author of the novel The Adventures of Tom Sawyer?
+Mark Twain
+Jane Austen
+James Patterson
+Who is the author of bestseller The Hobbit?
+J.R.R. Tolkien
+Suzanne Collins
+Dan Brown

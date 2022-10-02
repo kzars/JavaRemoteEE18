@@ -1,0 +1,21 @@
+3
+Capital city of Australia?
+Canberra
+Sydney
+Melbourne
+Capital city of USA?
+Washington
+New York
+Dallas
+Capital city of Brazil?
+Brasilia
+Rio de Janeiro
+San paulo
+Capital city of  Canada?
+Ottawa
+Montreal
+Calgary
+Whats the capital of Latvia?
+Riga
+Liepaja
+Ogre
