@@ -104,9 +104,21 @@ SELECT name FROM students WHERE sid NOT IN (SELECT studentID FROM grades);
 
 -- Names of teachers that have not yet taught any class
 
+SELECT name FROM teachers WHERE tid NOT IN(SELECT teacherID FROM grades);
+
 -- Names of teachers who have taught Biology (sub sub query)
 
+SELECT name AS 'Biology Teachers' FROM teachers WHERE tid IN(SELECT subID FROM subjects WHERE name = 'Biology');
+
+select name as 'Biology teachers' from teachers where tid in(select teacherID from grades where subjectID in(select subid from subjects where name = 'Biology'));
+
+SELECT name FROM teachers WHERE tid IN(2,2,3);
+
 -- Names of students who have  taken at least one class
+
+SELECT name FROM students WHERE sid IN(SELECT studentID FROM grades);
+
+
 
 
 

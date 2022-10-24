@@ -23,7 +23,7 @@ CREATE TABLE users(
 
 INSERT INTO users (username,password,fullname,email) VALUES ('trump','mexico','Donald Trump', 'maga@gmail.com');
 
--- No default value = mandarory column 
+-- No default value = mandatory column 
 INSERT INTO users (username,password) VALUES ('karlis','1234');
 
 INSERT INTO users(username,password,fullname) VALUES ('bush','qwerty','Georg W. Bush');
