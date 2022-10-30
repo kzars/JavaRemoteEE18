@@ -1,6 +1,6 @@
 package advanced.tasks.advancedquiz;
 
-import javafx.scene.transform.Scale;
+
 
 import java.io.BufferedWriter;
 import java.io.File;
