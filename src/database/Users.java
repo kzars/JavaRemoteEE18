@@ -142,6 +142,7 @@ public class Users {
 
         Statement dropStatement = con.createStatement();
         dropStatement.execute("DROP TABLE IF EXISTS users");
+        
 
     }
 

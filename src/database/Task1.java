@@ -90,12 +90,11 @@ public class Task1 {
             String genre = rs.getString("genre");
             int yearOfRelease = rs.getInt("yearOfRelease");
 
-            System.out.println("###########");
+            System.out.println("############");
             System.out.println("Id: " + id);
             System.out.println("Title: " + title);
             System.out.println("Genre: " + genre);
             System.out.println("Year of release: " + yearOfRelease);
-
         }
     }
 
